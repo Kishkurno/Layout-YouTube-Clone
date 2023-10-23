@@ -1,0 +1,155 @@
+
+
+ .thumbnail{
+  /* width: 300px ; */ 
+  width: 100%;
+  /* display: block; */
+
+}
+
+.video-stats,
+.video-author{
+  color:rgb(96,96,96);
+  font-size: 12px;
+}
+
+.video-author{
+  margin-bottom: 4px;
+}
+
+.video-title{
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 20px; 
+  cursor: pointer;     }
+
+/* .video-preview{
+  /* width: 300px; */
+  /* display: inline-block;
+  vertical-align: top ; */
+  /* margin-right: 15px; 
+  
+} */
+
+.video-title-link{
+  text-decoration: none;
+  color: black;
+}
+
+.profile-picture-container{
+  position: relative;
+  display: inline-block;
+}
+
+.channel-tooltip{
+  background-color: white;
+  width: 200px;
+
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px; 
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.20);
+  
+  position:absolute;
+  z-index: 100;
+  pointer-events: none;
+
+  opacity: 0;
+  transition: opacity 0.20s;
+}
+
+.profile-picture-container:hover .channel-tooltip {
+  opacity: 1;
+}
+
+.channel-tooltip-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 6px;
+}
+
+.channel-tooltip-name {
+  font-family: Roboto, Arial;
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.channel-tooltip-stats {
+  font-family: Roboto, Arial;
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+}
+
+
+.channel-picture{
+  
+  width: 50px;
+  vertical-align: top;
+  
+}
+
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.video-info{
+  width: 250px;
+}
+
+.profile-picture{
+  width: 36px;
+  border-radius: 50px;
+}
+
+.thumbnail-row{
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 14px;
+}
+
+@media (max-width:750px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+} 
+
+@media (min-width:751px) and (max-width:999px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width:1000px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
+.video-time{
+  background-color: black;
+  color: white;
+  position:absolute;
+  bottom: 10px;
+  right: 5px;
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  padding: 4px ;
+  border-radius: 4px;
+}
+
